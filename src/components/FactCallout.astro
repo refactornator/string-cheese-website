@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+
+const facts = await getCollection("facts");
+const fact = facts[Math.floor(Math.random() * facts.length)];
+---
+
+{
+  fact && (
+    <div class="rounded-lg border border-cheddar-gold bg-pale-cream p-6">
+      <p class="font-display text-lg font-bold text-string-pull-red">
+        Did You Know?
+      </p>
+      <p class="mt-2 font-body text-aged-rind-brown">{fact.data.question}</p>
+      <p class="mt-1 font-body text-aged-rind-brown/80">{fact.data.answer}</p>
+    </div>
+  )
+}
