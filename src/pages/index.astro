@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import FactCallout from "../components/FactCallout.astro";
+---
+
+<BaseLayout
+  title="String Cheese — Home"
+  description="Learn all about the history, science, and joy of string cheese."
+>
+  <section class="mx-auto max-w-2xl px-4 py-16 text-center">
+    <h1 class="font-display text-5xl font-bold text-aged-rind-brown">
+      String Cheese
+    </h1>
+    <p class="mt-4 font-body text-lg text-aged-rind-brown/80">
+      A stretchy, peelable snack with a surprisingly interesting story.
+    </p>
+  </section>
+  <section class="mx-auto max-w-2xl px-4 pb-16">
+    <FactCallout />
+  </section>
+</BaseLayout>

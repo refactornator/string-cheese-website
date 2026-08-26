@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@import "@fontsource/playfair-display/400.css";
+@import "@fontsource/playfair-display/700.css";
+@import "@fontsource/nunito/400.css";
+@import "@fontsource/nunito/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+
+@theme {
+  --color-cheddar-gold: #f5a623;
+  --color-mozzarella-white: #fafaf5;
+  --color-string-pull-red: #d94f3d;
+  --color-aged-rind-brown: #7b4f2e;
+  --color-wax-coat-tan: #c9a96e;
+  --color-pale-cream: #fff8e7;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Nunito", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
